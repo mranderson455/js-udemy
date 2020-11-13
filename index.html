@@ -1,7 +1,33 @@
 <!DOCTYPE html>
-<head>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>114</title>
 
-</head>
-<body>
+        <script>
+            var name = prompt("What is your name?");
+            var age = prompt("What is your age?");
+            var msg;
 
-</body>
+            if ( name == "Samuel" ) {
+                msg = "Hey Sam!";
+            } else if ( name == "Ann" ) {
+                msg = "Hey Ann!";
+            } else {
+                msg = "Who are you?";
+            }
+
+            if ( age > 18 || age < 50 ) {
+                msg = "You are an adult";
+            } else if ( name == "Adam" && age == 18 ) {
+                msg = "Happy 18th birthday Adam!";
+            } else if ( age != 10 ) {
+                msg = "You definitely aren't 10 years old"
+            }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
