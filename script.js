@@ -1,20 +1,21 @@
-function sing(song) {
-    console.log(song);
-}
-
-function add(num1, num2) {
-    return num1 + num2;
-}
-
-function checkAge(age) {
-    if (age > 18 || age < 5) {
-        console.log("cool age!");
+function checkDriverAge(age) {
+    if (Number(age) < 18) {
+        alert("Sorry, you are too yound to drive this car. Powering off");
+    } else if (Number(age) > 18) {
+        alert("Powering On. Enjoy the ride!");
+    } else if (Number(age) === 18) {
+        alert("Congratulations on your first year of driving. Enjoy the ride!");
     }
 }
 
-sing("yah yeet");
-sing("woo hoo");
+function checkDriverAge2(age) {
+    if (Number(age) < 18) {
+        alert("Sorry, you are too yound to drive this car. Powering off");
+    } else if (Number(age) > 18) {
+        alert("Powering On. Enjoy the ride!");
+    } else if (Number(age) === 18) {
+        alert("Congratulations on your first year of driving. Enjoy the ride!");
+    }
+}
 
-console.log(add(2, 3));
-
-checkAge(27);
+checkDriverAge(92);
