@@ -1,14 +1,13 @@
-var arr = ["dog", "cat", "parrot"];
-arr = arr.concat(["tiger", "lion"]);
+var array = ["Banana", "Apples", "Oranges", "Blueberries"];
 
-arr = arr.sort();
-console.log(arr);
+array.splice(0, 1);
+array = array.concat(["Kiwi"]);
+array.splice(0, 1);
 
-arr = ["a", 1, undefined, true];
+array.reverse();
 
-arr = [function() {
-    console.log("yeet");
-},
-function() {
-    console.log("yah");
-}]
+console.log(array);
+
+var array2 = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
+
+console.log(array2[1][1][0]);
