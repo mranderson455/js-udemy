@@ -1,21 +1,14 @@
-function checkDriverAge(age) {
-    if (Number(age) < 18) {
-        alert("Sorry, you are too yound to drive this car. Powering off");
-    } else if (Number(age) > 18) {
-        alert("Powering On. Enjoy the ride!");
-    } else if (Number(age) === 18) {
-        alert("Congratulations on your first year of driving. Enjoy the ride!");
-    }
-}
+var arr = ["dog", "cat", "parrot"];
+arr = arr.concat(["tiger", "lion"]);
 
-function checkDriverAge2(age) {
-    if (Number(age) < 18) {
-        alert("Sorry, you are too yound to drive this car. Powering off");
-    } else if (Number(age) > 18) {
-        alert("Powering On. Enjoy the ride!");
-    } else if (Number(age) === 18) {
-        alert("Congratulations on your first year of driving. Enjoy the ride!");
-    }
-}
+arr = arr.sort();
+console.log(arr);
 
-checkDriverAge(92);
+arr = ["a", 1, undefined, true];
+
+arr = [function() {
+    console.log("yeet");
+},
+function() {
+    console.log("yah");
+}]
